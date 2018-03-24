@@ -1,4 +1,13 @@
 # Boolean-Inference-Checker
+This project is very similar to my Boolean-Expression-Evaluator-C, in that they are both based on the Backus–Naur form(BNF), which you can read more about here: https://en.wikipedia.org/wiki/Backus%E2%80%93Naur_form. What makes this one different is that,essentially, this program also allows variables such as "foo" instead of only T,F, etc. This program will then take an input, for example
+"p => q, ~q :. ~p", and evaluate it with every possible combonation of T and F in the place of the logical variables(varaibles that aren't explicity defined as T or F) and ultimately evaluate it to one of four things: symbol error, grammar error, valid or invalid.
+
+Examples of these outputs:
+"=> u F *" is "symbol error"
+"u => :. :. F pr" is "grammar error"
+"u => p, u :. p" is "valid"
+"pa v q, ~pa v ~q :. pa <=> q" is "invalid". 
+
 A logical variable is a string of one or more lowercase letters a,...,z, not beginning with v. For example, the following are logical variables: "p", "foo", "qrs", "ivt".
 
 A symbol is either a logical variable or one of the following eleven strings:  "T", "F", "^", "v", "~", "=>", "<=>", "(", ")", ":.", "," Note that, by comparison with the Boolean expression evaluator, the new symbols are logical variables, the comma, and the therefore symbol ":.".
