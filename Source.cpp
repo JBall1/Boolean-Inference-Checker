@@ -1,5 +1,5 @@
 //By Joshua Ball
-//CS 2413 - Project 2
+
 
 #include <locale>  
 #include <sstream>
