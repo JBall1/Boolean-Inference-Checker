@@ -1,7 +1,7 @@
 # Boolean-Inference-Checker
 This project is very similar to my Boolean-Expression-Evaluator-C, in that they are both based on the Backus–Naur form(BNF), which you can read more about here: https://en.wikipedia.org/wiki/Backus%E2%80%93Naur_form. What makes this one different is that,essentially, this program also allows variables such as "foo" instead of only T,F, etc. This program will then take an input, for example
 "p => q, ~q :. ~p", and evaluate it with every possible combonation of T and F in the place of the logical variables(varaibles that aren't explicity defined as T or F) and ultimately evaluate it to one of four things: symbol error, grammar error, valid or invalid.
-
+Most of the challeneges were overcome with the use of recursive decent and lots of caffine.
 
 Examples of these outputs:
 "=> u F *" is "symbol error"
